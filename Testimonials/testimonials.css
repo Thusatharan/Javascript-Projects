@@ -41,9 +41,15 @@ body {
 }
 
 .name{
-    padding: 10px;
+    padding-top: 10px;
     font-weight: 700;
+    text-transform: uppercase;
 
+}
+
+.job{
+    text-transform: uppercase;
+    color: rgb(76, 181, 216);
 }
 
 .review-desc{
