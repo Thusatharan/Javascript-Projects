@@ -3,7 +3,7 @@ const reviews = [
     {
         id: 1,
         name: "Michael Scofield",
-        jo: "Software Engineer",
+        job: "Software Engineer",
         img: "https://www.hotfootdesign.co.uk/wp-content/uploads/2016/05/d5jA8OZv.jpg",
         description: "photos of customers using your product or service or displaying it in real-life situations demonstrates an extra level of effort that not only proves their loyalty to your business, but it allows other consumers to see your goods in action, which can help them make informed shopping decisions."
     },
@@ -12,7 +12,7 @@ const reviews = [
         name: "John Smith",
         job: "Arrchitect",
         img: "https://preview.keenthemes.com/metronic-v4/theme/assets/pages/img/avatars/team1.jpg",
-        description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable"
+        description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, I also appreciate the effort to improve the company income  by injected humour, or randomised words which don't look even slightly believable"
     },
     {
         id: 3,
@@ -34,7 +34,7 @@ const prevButton = document.querySelector(".previous");
 const nextButton = document.querySelector(".next");
 
 // Starting item
-let currentitem = 2;
+let currentitem = 0;
 
 // Load initial Items
 window.addEventListener("DOMContentLoaded", function () {
@@ -45,7 +45,6 @@ window.addEventListener("DOMContentLoaded", function () {
 
 function showPerson(person) {
     const item = reviews[person];
-    console.log(item);
     img.src = item.img;
     userName.textContent = item.name;
     job.textContent = item.job;
@@ -53,3 +52,19 @@ function showPerson(person) {
 };
 
 
+
+nextButton.addEventListener("click", function () {
+    currentitem++;
+    if (currentitem > reviews.length - 1) {
+        currentitem = 0;
+    }
+    showPerson(currentitem);
+});
+
+prevButton.addEventListener("click", function () {
+    currentitem--;
+    if (currentitem < 0) {
+        currentitem = reviews.length - 1;
+    }
+    showPerson(currentitem);
+});
