@@ -3,3 +3,7 @@
 body{
     font-family: 'Lora';
 }
+
+.container{
+    border-radius: 15px;    
+}
