@@ -6,10 +6,10 @@ const colors = [
     '#ffa8af',
 ];
 
-const button = document.getElementById("#btn");
+const button = document.getElementById("btn");
 const color = document.querySelector(".color");
 
-btn.addEventListener("click", function name() {
+button.addEventListener("click", function () {
     const randomNumber = getRandom();
     console.log(randomNumber);
     document.body.style.backgroundColor = colors[randomNumber];
