@@ -12,16 +12,16 @@
     <link rel="stylesheet" href="./counter.css">
 </head>
 
-<body>
+<body style="height: 100vh;">
 
-    <main>
-        <div class="container mx-auto">
+    <main class="d-flex justify-content-center align-items-center">
+        <div class="container  text-center  p-3 m-5 bg-light w-50">
             <h1>Counter</h1>
-            <span>0</span>
+            <span class="count" id="count">0</span>
             <div>
-                <button class="btn decrease">Decrease</button>
-                <button class="btn reset">Reset</button>
-                <button class="btn increase">Increse</button>
+                <button class="btn btn-danger decrease">Decrease</button>
+                <button class="btn btn-secondary reset">Reset</button>
+                <button class="btn btn-success increase">Increase</button>
             </div>
         </div>
     </main>

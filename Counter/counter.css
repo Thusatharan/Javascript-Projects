@@ -1,0 +1,12 @@
+.count{
+ font-size: 121px;;
+}
+.btn{
+    padding: 10px 40px;
+    /* border-radius: 20px;background-color: darkgrey; */
+    color: white;
+    margin: 20px;
+}
+.container{
+    border-radius: 20px;
+}
