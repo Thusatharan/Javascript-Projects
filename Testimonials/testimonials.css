@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+.horLine{
+    margin-top: 10px;
+    width: 10%;
+    height: 4px;
+    background-color: darkturquoise;
+    color: #000;
+}
+
+.testimonials{
+    margin-top: 40px;
+    background-color: lavender;
+    padding: 20px;
+    padding-top: 30px;
+    width: 600px;
+    border-radius: 68% 32% 34% 66% / 80% 45% 55% 20% ;
+}
+
+
+.image-container img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    z-index: 2;
+    position: relative;
+}
+.image-back{
+    left: 45%;
+    margin-top: -5px;
+    position: absolute;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-color: lightblue;
+    z-index: 1;
+}
+
+.name{
+    padding: 10px;
+    font-weight: 700;
+
+}
+
+.review-desc{
+    padding: 10px;
+}
+
+.btn {
+    font-size: 30px;
+    color: rgb(114, 199, 230);
+    border: none;
+    outline: none;
+}
