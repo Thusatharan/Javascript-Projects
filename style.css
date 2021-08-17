@@ -2,4 +2,19 @@
 
 body{
     font-family: 'Lora';
+
+}
+
+
+.img{
+    position: relative;
+}
+
+.desc{
+  position: absolute;  
+  bottom: 0;
+  left:0;
+  right: 0;
+  opacity: 0.5;
+  font-size: 20px;
 }
